@@ -1,0 +1,31 @@
+{
+  "name": "cc-webhook",
+  "version": "1.0.0",
+  "description": "Claude Code Slack 알림 웹훅 서버 - 여러 프로젝트의 작업 완료를 Slack으로 알림",
+  "main": "dist/server.js",
+  "scripts": {
+    "dev": "ts-node src/server.ts",
+    "build": "tsc",
+    "start": "node dist/server.js",
+    "watch": "tsc -w"
+  },
+  "keywords": [
+    "claude-code",
+    "webhook",
+    "slack",
+    "notification"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@slack/webhook": "^7.0.2",
+    "express": "^4.18.2",
+    "dotenv": "^16.3.1"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/node": "^20.10.4",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.3"
+  }
+}
